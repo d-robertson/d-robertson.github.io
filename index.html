@@ -1,8 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
 
@@ -12,8 +8,7 @@
 <!-- CSS
 ================================================================================================= -->
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/themes/type_04.css">
-<link rel="stylesheet" href="css/themes/color_13.css">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
 <!-- Favicons
 ================================================================================================= -->
@@ -36,26 +31,18 @@
 
 <!-- Write preloader to page - this allows the site to load for users with JS disabled -->
 <script type="text/javascript">
-	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
+	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/loader.svg' alt='Preloader' /></div></div>");
+
+	
+	
 </script>
 
 <div class="container">
 	
 	<!-- Header begins ========================================================================== -->
-	<header class="sixteen columns">
-		<div id="logo">
-			<h1>Derek Robertson</h1>
-			<h2>Full Stack Web Developer</h2>
-			<!--
-			<img src="images/logo.png" width="275" height="35" alt="Logo" />
-			-->
-		</div>
+	<header>
 		<nav>
-			<ul>
-				<li><button id="workPage">Projects</button></li>
-				<li><button id="aboutPage">About</button></li>
-				<!--<li><a href="http://wordpress.org" target="_blank">Blog</a></li>-->
-			</ul>
+			<h1>Derek Robertson</h1>
 		</nav>
 		<hr />
 	</header>
@@ -64,349 +51,96 @@
 	<!-- Work page begins ======================================================================= -->
 	<div id="work">
 	
-		<div id="overview" class="sixteen columns">
-			<h4>Building things – that’s what I do best. Whether it’s building a home, building a freeway or building apps, I am passionate about the creative process and solving complex problems. You’ll find I’m proficient with a multitude of scripting languages and frameworks, a true team player, and just a lot of fun to work with!</h4>
-			<hr />
-		</div>
 		
-		<div class="eight columns" id="col1">
-		
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Project Brain Storm</h4>
-						<h5>A speed typing game made with Phaser.js</h5>
-					</div>
-					
-					<img src="./assets/images/projects/Untitled.jpg" alt="Project 01" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Project Brain Storm</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="http://d-robertson.github.io/Project-Brain-Storm/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<p>
-						Project Brain Storm is a fast paced marathon style typing game built using the phaser.js library. I'm pretty pumped that i was able to add some sweet tunes and rad animations. Next i would like to tailor it to mobile and make it a speed texting game.
-					</p>
-					
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>juniorDev</h4>
-						<h5>A job board built for junior level developers</h5>
-					</div>
-					<img src="./assets/img/juniordev.png" alt="Project 02" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>juniorDev</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="http://derek-juniordev.herokuapp.com/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					
-					<p>
-						juniorDev is a simple job board pulling in web development jobs with the search terms "junior" and "entrylevel" from the dice api. You can filter the results by entering a zipcode for the area you are searching in.
-					</p>
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Yammerings on Twitter</h4>
-						<h5>A group of graphs built with D3.js and consuming twitters streaming api</h5>
-					</div>
-					<img src="./assets/img/yammerings.png" alt="Project 02" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Yammerings on Twitter</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="https://yammerings.herokuapp.com/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					
-					<p>
-						Yammerings on Twitter is our consumption and vizualization on the data we gathered from the twitter streaming api. We used D3.js to build our graphs and we built the backend using ruby on rails. We deployed the app using Heroku, and currently there is still work to be done.
-					</p>
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Giphy API with Angular</h4>
-						<h5>A simple page pulling in giphy GIF's and implementing an infinite scroll feature</h5>
-					</div>
-					<img src="./assets/img/angular-giphy.png" alt="Project 02" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Giphy API with Angular</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="https://d-robertson.github.io/angular-giphy/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					
-					<p>
-						Giphy with angular was a simple project where I wanted to use Giphy's api and populate my page with some default results on page load. With the default results you have the ability to infinitely scroll more results. Also you can search for anything you want and still use the infinite scroll feature.
-					</p>
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Pick a Park</h4>
-					</div>
-					<img src="./assets/img/pickapark.png" alt="Project 05" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Pick a Park</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="https://d-robertson.github.io/api_hackathon/#/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<p>
-						A day long hackathon at General Assembly, where myself and another dev built out a site using the google maps api, and the socrata api. We used angular.js to generate our page content.
-					</p>
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Homicides by Police</h4>
-						<h5>A group hackathon project where we had to build an app around a current event or events.</h5>
-					</div>
-					<img src="./assets/img/homicides.png" alt="Project 06" class="thumbnailImage" />
-				</div>
-					
-				<div class="projectInfo">
-					<h4>Homicides by Police</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="https://github.com/d-robertson/MEAN_Hackathon" target="_blank" class="aTagText">View Github repo</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<p>
-						We built an app around the police envolved homicides. We give the user the ability to search by a multitude of options, and get back information on the victims. We built it out with angular and express.
-					</p>
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Random Quote</h4>
-						<h5>A random quote generator using Angular</h5>
-					</div>
-					
-					<img src="./assets/images/projects/randomQuote.png" alt="Project 01" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Random Quote</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="https://d-robertson.github.io/randomQuote/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<p>
-						I built a simple Angular app that calls and external API for a random famous quote. Then I give the user the ability to cycle through all the quotes they have searched, and I give the user the ability to tweet there quote.
-					</p>
-					
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			<!-- Project begins ================================================================= -->
-			<div class="project">
-				
-				<div class="projectThumbnail">
-					<svg class="thumbnailMask"></svg>
-					<div class="projectThumbnailHover">
-						<h4>Wiki Viewer</h4>
-						<h5>Consuming mediawiki's api using Angular</h5>
-					</div>
-					
-					<img src="./assets/img/wiki.png" alt="Project 01" class="thumbnailImage" />
-				</div>
-				
-				<div class="projectInfo">
-					<h4>Random Quote</h4>
-					<div class="projectNavCounter"></div>
-					<div class="projectNav">
-						<div class="projectNavEnlarge"><a href="https://d-robertson.github.io/wikiViewer/" target="_blank" class="aTagText">View Live</a></div>
-						<div class="projectNavClose"><button class="closeButton">Close</button></div>
-						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
-					</div>
-					<p>
-						This is a simple Angular app that using mediawiki's api, I can pull in a search of wikipedia pages and display them with there corresponding links.
-					</p>
-					
-				</div>
-				
-			</div>
-			<!-- Project ends =================================================================== -->
-			
-		</div><!-- col1 -->
-		
-		<!-- Even numbered projects are dynamically moved into this second column via JS -->
-		<div class="eight columns" id="col2">
-		</div>
-	
 	</div>
 	<!-- Work page ends ========================================================================= -->
 	
 	<!-- About page begins ====================================================================== -->
 	<div id="about">
 		
-		<!-- Column 1 begins ==================================================================== -->
-		<div class="eight columns">
-			
-			<h3>Summary</h3>
-			<p>
-				Hello my name is Derek Robertson. I am a Seattle based web developer trained in cutting-edge technology and development. I have recently graduated from General Assembly's Web Development Immersive and am looking for my first opportunity to break into the tech field as a junior web developer. I come from a background in construction so this is a complete career change for me, though I am very excited to get started. My experience in the construction industry has taught me how to work hard, and how to be a team player. I am a talented developer and problem-solver who is dedicated to building quality products and constantly learning.
-			</p>
-			
-			<h3>Skills</h3>
-				<div class="listContainer">
-					<div class="stack">
-						<ul class="square">
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>BootStrap</li>
-							<li>JavaScript</li>
-							<li>Jquery</li>
-							<li>Angular</li>
-							<li>Node</li>
-							<li>Express</li>
-						</ul>
-					</div>
-					<div class="stack">
-						<ul class="square">
-							<li>Meteor</li>
-							<li>Sequelize</li>
-							<li>Mongoose</li>
-							<li>Postgres</li>
-							<li>MongoDB</li>
-							<li>Ruby</li>
-							<li>Ruby on Rails</li>
-							<li>Git</li>
-						</ul>
-					</div>
-				</div>
-			
-			<h3>Education</h3>
-			<h4>General Assembly</h4>
-			<p>Full Stack Web Development Immersive 2016</p>
-			<h4>Code Fellows</h4>
-			<p>Web Development Bootcamp 2015</p>
-			<h4>Free Code Camp</h4>
-			<p>Full Stack Web Development Certification, Computer Software Engineering 2016-2017</p>
-			
-			<h3>Employment</h3>
-			<h4>General Assembly</h4>
-			<h5>Seattle, WA</h5>
-			<p>
-				I am currently working as a Teaching Assistant at General Assembly for the Web Development Immersive classes. I have to stay on top of any new technologies that the instructors are teaching so that I can help the students complete there deliverables on time.
-			</p>
-
-			<h4>Post Mates</h4>
-			<h5>Seattle, WA</h5>
-			<p>
-				I rode my bike and made deliveries for Post Mates while learning web development. I felt it would give me flexible hours, and help me to learn my new city.m 
-			</p>
-
-			<h4>Core-Mark International</h4>
-			<h5>Spokane, WA</h5>
-			<p>
-				I drove Class A semi trucks delivering products to customers in Washington, Oregon, Idaho, and Montana. This job required a calm head during high stress situations as well as the ability to stay focused for long periods of time. 
-			</p>
-			
-			
-			
-		</div>
-		<!-- Column 1 ends ====================================================================== -->
 		
-		<!-- Column 2 begins ==================================================================== -->
-		<div class="eight columns">
 			
-			<img src="./assets/img/Derek-Robertson/mebw.png" alt="About" />
+		<h1>Hi i'm Derek,</h1>
+		<h1>
+			Spokane based web developer with 5 years creative problem solving and programming experience. My passion is creating simple clean solutions to difficult problems through software. Utilising coding and collaboration to build and maintain modern web applications. My experience ranges from small static sites to large <br> full stack applications. 
+		</h1>
 			
-			<ul class="linedList">
-				<li><strong>Location:</strong> Seattle, WA</li>
-				<li><strong>Email:</strong> <a href="mailto:dwilliamrobertson@gmail.com">dwilliamrobertson@gmail.com</a></li>
-				<li><strong>Styled R&eacute;sum&eacute;:</strong> <a href="https://resume.creddle.io/resume/epb7i7whyhf">Creddle Resume</a></li>
-				<li><strong>Plain text R&eacute;sum&eacute;:</strong> <a href="https://www.dropbox.com/s/dtofgbvomfvimrd/plaintextResume.txt?dl=0">download link</a></li>
-				<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/derek-robertson-66069a104" target="_blank">www.linkedin.com/in/derek-robertson</a></li>
-				<li><strong>Github:</strong> <a href="https://github.com/d-robertson" target="_blank">github.com/d-robertson</a></li>
-
-			</ul>
 			
-		</div>
-		<!-- Column 2 ends ====================================================================== -->
+			
+	
+			
+	
+		
 		
 	</div>
+	<div class="projects">
+		<h1>Projects I have built from the ground up</h1>
+
+		<div class="project left">
+			<div class="overlay">
+				<a href="https://redeemfit.com" target="_blank">
+					<div class="overlay_container center_xy">
+						<h2>view project</h2>
+						<h3>a subscription based video streaming site</h3>
+					</div>
+				</a>
+				
+			</div>
+			<div class="center_xy">
+				<h2>Redeem Fit</h2>
+			</div>
+
+		</div>
+		<div class="project right">
+			<div class="overlay">
+				<a href="https://zoomgive.com" target="_blank">
+					<div class="overlay_container center_xy">
+						<h2>view project</h2>
+						<h3>a campaign managment donation site</h3>
+					</div>
+				</a>
+				
+			</div>
+			<div class="center_xy">
+				<h2>Zoomgive</h2>
+			</div>	
+			
+		</div>
+	</div>
+	<div class="education_employment">
+
+		<h3>Education</h3>
+		<h4>General Assembly</h4>  <p>Full Stack Web Development Immersive 2016</p>
+		
+		<h4>Code Fellows</h4>  <p>Web Development Bootcamp 2015</p>
+		
+		<h4>Free Code Camp</h4>  <p>Full Stack Web Development Certification, Computer Software Engineering 2016-2017</p>
+		
+		
+		<h3>Employment</h3>
+		<h4>crowdhubapps.com</h4>
+		<h5>Spokane, WA</h5>
+		<h5>March 2017 - Current</h5>
+		<p>
+			software developer for crowdhubapps building fullstack applications using php, mysql, jquery, and cordova.
+		</p>
+
+	</div>
+
+
+	
 	<!-- About page ends ======================================================================== -->
 	
 	<!-- Footer begins ========================================================================== -->
 	<footer class="sixteen columns">
 		<hr />
 		<ul id="footerLinks">
-			<li>&copy; 2016 Derek Robertson. All rights reserved.</li>
+			<li><strong>Location:</strong> Spokane, WA</li>
+			<li><strong>Email:</strong> <a href="mailto:dwilliamrobertson@gmail.com">dwilliamrobertson@gmail.com</a></li>
+			
+			<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/derek-robertson-66069a104" target="_blank">www.linkedin.com/in/derek-robertson</a></li>
+			<li><strong>Github:</strong> <a href="https://github.com/d-robertson" target="_blank">github.com/d-robertson</a></li>
+			<li id="copy_reserved"></li>
 		</ul>
 	</footer>
 	<!-- Footer ends ============================================================================ -->
