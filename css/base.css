@@ -58,9 +58,17 @@ body .projects {
 	color: #0c0a59;
 }
 
+@media screen and (max-width: 768px) {
+	body .projects {
+		height: 180vh;
+	}
+}
+
+
 body .projects h1 {
 	margin-bottom: 80px;
 	margin-left: 40px;
+	max-width: calc(100% - 80px);
 }
 
 body .projects .project {
@@ -72,13 +80,33 @@ body .projects .project {
 	
 }
 
+
 body .projects .left {
 	border-right: solid 1px #8985f2;
 }
-
 body .projects .right {
 	border-left: solid 1px #8985f2;
 }
+
+@media screen and (max-width: 768px) {
+	body .projects .project {
+		width: 100%;
+		float: left;
+		height: 80vh;
+		position: relative;
+		color: #8985f2;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body .projects .left {
+		border-bottom: solid 1px #8985f2;
+	}
+}
+
+
+
 
 body .projects .overlay {
 	position: absolute;
